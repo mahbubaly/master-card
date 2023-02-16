@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <div class="flex justify-center align-middle my-6 mx-auto">
+        <div class=" flex justify-center align-middle my-4 md:my-6 mx-auto">
             <h1 class="text-4xl font-semibold text-[#31A5AC]">Money Master</h1>
             <img class="w-12" src="images/61584.png" alt="">
 
@@ -23,30 +23,30 @@
     </header>
 
     <main>
-        <section class="mx-auto grid grid-cols-2 gap-5">
+        <section class="mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-5">
 
-            <div class="pl-3">
-                <img class="ml-2 h-full" src="images/P.jpg" alt="">
+            <div class="md:pl-3">
+                <img class="md:ml-2 ml-0 h-full p-2 md:p-0 " src="images/P.jpg" alt="">
 
             </div>
-            <div class="text-center  bg-[#F8F8F8] p-6 mr-2">
-                <h1 class="text-xl mb-5 font-semibold ">Income</h1>
-                <div class="flex justify-center gap-4 align-middle mb-5">
+            <div class="text-center  bg-[#F8F8F8] p-2 md:p-6  md:mr-2">
+                <h1 class="md:text-xl mb-2 md:mb-5 font-semibold ">Income</h1>
+                <div class="flex justify-center gap-4 align-middle mb-2 md:mb-5">
                     <h1 class="mt-2 font-semibold">Income: </h1>
-                    <input id="income-total" class="p-2 w-52 rounded font-semibold bg-[#DCDCDC] mr-16" type="text" placeholder="">
+                    <input id="income-total" class="p-2 w-3/6 md:w-52 rounded font-semibold bg-[#DCDCDC] mr-16" type="text" placeholder="">
                 </div>
                 <h1 class="text-xl mb-5  font-semibold ml-1">Expenses</h1>
                 <div class="flex justify-center gap-4 align-middle">
                     <h1 class="mt-2 font-semibold mr-2">Food:</h1>
-                    <input id="food-filed" class="p-2  w-52 rounded mb-3 font-semibold bg-[#DCDCDC] mr-14" type="text" placeholder="">
+                    <input id="food-filed" class="p-2 w-3/6 md:w-52 rounded mb-3 font-semibold bg-[#DCDCDC] mr-14" type="text" placeholder="">
                 </div>
                 <div class="flex justify-center gap-4 align-middle">
                     <h1 class="mt-2 font-semibold mr-2">Rent:</h1>
-                    <input id="rent-filed" class="p-2  w-52 rounded mb-3 font-semibold bg-[#DCDCDC] mr-12" type="text" placeholder="">
+                    <input id="rent-filed" class="p-2 w-3/6 md:w-52 rounded mb-3 font-semibold bg-[#DCDCDC] mr-12" type="text" placeholder="">
                 </div>
                 <div class="flex justify-center gap-4 align-middle">
                     <h1 class="mt-2 font-semibold mr-2">Clothes:</h1>
-                    <input id="Clothes-filed" class="p-2  w-52 rounded ml-0 font-semibold bg-[#DCDCDC] mr-16" type="text" placeholder="">
+                    <input id="Clothes-filed" class="p-2  w-3/6 md:w-52 rounded ml-0 font-semibold bg-[#DCDCDC] mr-16" type="text" placeholder="">
                 </div>
 
                 <div class="flex justify-center my-6">
@@ -57,7 +57,7 @@
                     <h1 class="font-semibold text-xl">Balance: $<span id="total-balance"> 00</span></h1>
                 </div>
                 <div class="flex justify-center gap-4 my-5">
-                    <h1>Save:</h1>
+                    <h1 class="mt-1 font-semibold">Save:</h1>
                     <input id="convert-percentage" class="p-1 w-32 rounded  font-semibold bg-[#DCDCDC]" type="text" placeholder="">
                     <h1>%</h1>
                     <button id="btn-save" class="w-32 rounded  font-semibold text-white bg-[#59A5FF] pb-1">Save</button>
