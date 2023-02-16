@@ -33,44 +33,46 @@
                 <h1 class="text-xl mb-5 font-semibold ">Income</h1>
                 <div class="flex justify-center gap-4 align-middle mb-5">
                     <h1 class="mt-2 font-semibold">Income: </h1>
-                    <input class="p-2 w-52 rounded font-semibold bg-[#DCDCDC] mr-16" type="text" placeholder="">
+                    <input id="income-total" class="p-2 w-52 rounded font-semibold bg-[#DCDCDC] mr-16" type="text" placeholder="">
                 </div>
                 <h1 class="text-xl mb-5  font-semibold ml-1">Expenses</h1>
                 <div class="flex justify-center gap-4 align-middle">
                     <h1 class="mt-2 font-semibold mr-2">Food:</h1>
-                    <input class="p-2  w-52 rounded mb-3 font-semibold bg-[#DCDCDC] mr-14" type="text" placeholder="">
+                    <input id="food-filed" class="p-2  w-52 rounded mb-3 font-semibold bg-[#DCDCDC] mr-14" type="text" placeholder="">
                 </div>
                 <div class="flex justify-center gap-4 align-middle">
                     <h1 class="mt-2 font-semibold mr-2">Rent:</h1>
-                    <input class="p-2  w-52 rounded mb-3 font-semibold bg-[#DCDCDC] mr-12" type="text" placeholder="">
+                    <input id="rent-filed" class="p-2  w-52 rounded mb-3 font-semibold bg-[#DCDCDC] mr-12" type="text" placeholder="">
                 </div>
                 <div class="flex justify-center gap-4 align-middle">
                     <h1 class="mt-2 font-semibold mr-2">Clothes:</h1>
-                    <input class="p-2  w-52 rounded ml-0 font-semibold bg-[#DCDCDC] mr-16" type="text" placeholder="">
+                    <input id="Clothes-filed" class="p-2  w-52 rounded ml-0 font-semibold bg-[#DCDCDC] mr-16" type="text" placeholder="">
                 </div>
 
                 <div class="flex justify-center my-6">
-                    <h1 class="p-3 rounded ml-3 font-semibold text-xl text-white w-48  bg-[#59A5FF]">Calculate</h1>
+                   <button id="btn-calculate" class="p-3 rounded ml-3 font-semibold text-xl text-white w-48  bg-[#59A5FF]">calculate</button>
                 </div>
                 <div>
-                    <h1 class="font-semibold text-xl my-4">Total Expenses: 5500</h1>
-                    <h1 class="font-semibold text-xl">Balance: 4500</h1>
+                    <h1 class="font-semibold text-xl my-4">Total Expenses: $<span id="total-Expenses"> 00</span> </h1>
+                    <h1 class="font-semibold text-xl">Balance: $<span id="total-balance"> 00</span></h1>
                 </div>
                 <div class="flex justify-center gap-4 my-5">
                     <h1>Save:</h1>
-                    <input class="p-1 w-32 rounded  font-semibold bg-[#DCDCDC]" type="text" placeholder="">
+                    <input id="convert-percentage" class="p-1 w-32 rounded  font-semibold bg-[#DCDCDC]" type="text" placeholder="">
                     <h1>%</h1>
-                    <button class="w-32 rounded  font-semibold text-white bg-[#59A5FF] pb-1">Save</button>
+                    <button id="btn-save" class="w-32 rounded  font-semibold text-white bg-[#59A5FF] pb-1">Save</button>
                 </div>
                 <div>
-                    <h1 class="font-semibold text-xl my-4">Saving Amount: 2000 </h1>
-                    <h1 class="font-semibold text-xl">Remaining Balance: 2500</h1>
+                    <h1 class="font-semibold text-xl my-4">Saving Amount: $<span id="saving-total">00</span> </h1>
+                    <h1 class="font-semibold text-xl">Remaining Balance: $ <span id="Remaining-balance">00</span> </h1>
                 </div>
 
             </div>
 
         </section>
     </main>
+
+    <script src="js/calculate.js"></script>
 </body>
 
 </html>
